@@ -11,7 +11,21 @@
 <title>Dhilion UI</title>
 </head>
 <body>
-    <input id="searchbar" onkeyup="search_animal()" type="text" name="search">
+    <div class="container">
+        <div id="content">
+          <form class='form-inline'>
+            <div class="input-group">
+              <input id="searchbar" onkeyup="search_animal()" type="text" name="search" class="form-control search-form" placeholder="Scooby Doo">
+              <span class="input-group-btn" style="width:39px">
+                <button id="search-this"type="button" class="pull-right btn btn-default search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+          <p class="text-center">Some centered text</p>
+      </div>
+    </div>
 
 <ul id="list-holder">
 
