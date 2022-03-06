@@ -28,9 +28,18 @@ const search_animal=async()=> {
     for (let index = 0; index < data.length; index++) {
         if (data[index].title.toLowerCase().includes(input) && input != "") {
             x.innerHTML += `
-            
-            <a href="http://www.youtube.com/watch?v=${data[index].video_link}">
-            <img src="https://i3.ytimg.com/vi/${data[index].video_link}/0.jpg" alt="Image"></a>`;
+            <div class="container pt-5">
+    <div class="row">
+        <div class="col-md-6 col-12">
+        <a href="http://www.youtube.com/watch?v=${data[index].video_link}">
+        <img src="https://i3.ytimg.com/vi/${data[index].video_link}/0.jpg" alt="Image"></a>
+        </div>
+        <div class="col-md-6 col-12">
+        <p>${data[index].lyrics}</p>
+        </div>
+    </div>
+</div>
+            `;
         }
     }
   }
