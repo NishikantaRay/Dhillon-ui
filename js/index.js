@@ -31,11 +31,5 @@ const search_animal=async()=> {
             <h3>${data[index].title}</h3>
             </div>`;
         }
-        else{
-            x.innerHTML += `<div class="list-item">
-            <h3>not found</h3>
-            </div>`;
-        }
-        
     }
   }
