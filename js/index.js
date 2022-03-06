@@ -7,8 +7,6 @@ const getjsonData = async () => {
         let realdata = await fetch(api);
         data = await realdata.json();
         console.log(data);
-        // document.getElementById("lyrics").append( `${realData[0].lyrics}`);
-        // search_animal(data);
     } catch (error) {
         console.log(error);
     }
@@ -18,7 +16,7 @@ const getjsonData = async () => {
 getjsonData();
 
 // search bar function
-const search_animal=async()=> {
+const search_song=async()=> {
     let realdata = await fetch("./data/data.json");
     data = await realdata.json();
     let input = document.getElementById('searchbar').value
