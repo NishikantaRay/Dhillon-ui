@@ -26,10 +26,18 @@ const search_animal=async()=> {
     let x = document.querySelector('#list-holder');
     x.innerHTML = "";
     for (let index = 0; index < data.length; index++) {
-        if (data[index].title.toLowerCase().includes(input)) {
-            x.innerHTML += `<div class="list-item">
-            <h3>${data[index].title}</h3>
-            </div>`;
+        if (data[index].title.toLowerCase().includes(input) && input != "") {
+            x.innerHTML += `<div class="card pt-5">
+            <center>
+            <h2>Music Name</h2>
+            <img src="https://images.8tracks.com/cover/i/000/313/145/anime-music-widescreen-original-693454-3168.jpg?rect=0,0,500,500&q=98&fm=jpg&fit=max" alt="Image">
+          <audio controls>
+            <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          <hr>
+            </center>
+          </div>`;
         }
     }
   }

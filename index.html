@@ -11,7 +11,12 @@
 <title>Dhilion UI</title>
 </head>
 <body>
-    <input id="searchbar" onkeyup="search_animal()" type="text" name="search">
+<div class="container-fluid pt-5">
+    <form class="form-search" method="get" action="#">
+        <input type="search" id="searchbar" onkeyup="search_animal()" name="search" placeholder="search your book here for..">
+        <button type="submit">Search</button>
+    </form>
+</div>
 
 <ul id="list-holder">
 
